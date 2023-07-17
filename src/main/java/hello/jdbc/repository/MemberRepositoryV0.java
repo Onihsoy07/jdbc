@@ -82,6 +82,25 @@ public class MemberRepositoryV0 {
         }
     }
 
+    public void delete(String memberId) throws SQLException {
+        String sql = "delete from member where member_id=?";
+
+        Connection conn = null;
+        PreparedStatement ps = null;
+
+        try {
+            conn = getConnection();
+            ps = conn.prepareStatement(sql);
+            ps.setString(1, memberId);
+            ps.executeUpdate();
+        } catch (SQLException e) {
+            log.error("db error", e);
+            throw e;
+        } finally {
+            close(conn, ps, null);
+        }
+    }
+
     //Statement의 Exception이 터져도 Connection close 됨
     private void close(Connection conn, Statement st, ResultSet resultSet) {
         if (st != null) {
