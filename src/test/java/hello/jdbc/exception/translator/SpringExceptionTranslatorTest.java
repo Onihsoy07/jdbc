@@ -47,7 +47,7 @@ public class SpringExceptionTranslatorTest {
     @Test
     void exceptionTranslator() {
         String sql = "select foo";
-`
+
         try {
             Connection conn = dataSource.getConnection();
             PreparedStatement ps = conn.prepareStatement(sql);
