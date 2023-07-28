@@ -11,6 +11,9 @@ import org.springframework.transaction.support.TransactionTemplate;
 import java.sql.Connection;
 import java.sql.SQLException;
 
+/**
+ * 트랜잭션 - @Transactional AOP
+ */
 @Slf4j
 @RequiredArgsConstructor
 public class MemberServiceV3_3 {

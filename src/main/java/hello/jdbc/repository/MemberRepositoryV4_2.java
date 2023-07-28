@@ -13,6 +13,9 @@ import javax.sql.DataSource;
 import java.sql.*;
 import java.util.NoSuchElementException;
 
+/**
+ * SQLExceptionTranslator 추가
+ */
 @Slf4j
 @RequiredArgsConstructor
 public class MemberRepositoryV4_2 implements MemberRepository {

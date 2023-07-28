@@ -7,6 +7,9 @@ import lombok.extern.slf4j.Slf4j;
 import java.sql.*;
 import java.util.NoSuchElementException;
 
+/**
+ * JDBC - DriverManager 사용
+ */
 @Slf4j
 public class MemberRepositoryV0 {
 

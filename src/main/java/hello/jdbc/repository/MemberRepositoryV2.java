@@ -9,6 +9,9 @@ import javax.sql.DataSource;
 import java.sql.*;
 import java.util.NoSuchElementException;
 
+/**
+ * JDBC - ConnectionParam
+ */
 @Slf4j
 @RequiredArgsConstructor
 public class MemberRepositoryV2 {

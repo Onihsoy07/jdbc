@@ -11,6 +11,12 @@ import javax.sql.DataSource;
 import java.sql.*;
 import java.util.NoSuchElementException;
 
+/**
+ * 예외 누수 문제 해결
+ * 체크 예외를 런타임 예외로 변경
+ * MemberRepository 인터페이스 사용
+ * throws SQLException 제거
+ */
 @Slf4j
 @RequiredArgsConstructor
 public class MemberRepositoryV4_1 implements MemberRepository {

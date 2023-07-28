@@ -10,6 +10,9 @@ import javax.sql.DataSource;
 import java.sql.*;
 import java.util.NoSuchElementException;
 
+/**
+ * JDBC - DataSource 사용, JdbcUtils 사용
+ */
 @Slf4j
 @RequiredArgsConstructor
 public class MemberRepositoryV1 {
